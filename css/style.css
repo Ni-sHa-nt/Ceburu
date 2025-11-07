@@ -97,6 +97,9 @@ Header Section
 
 .header-sec {
     padding: 15px 0;
+    position: sticky;
+    top: 0;
+    background: var(--tertiary-color);
 }
 
 .nav-logo a {
