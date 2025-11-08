@@ -322,6 +322,64 @@ Support Section
 
 
 
+/*
+######################################################
+ who We Are Section
+######################################################
+ */
+.who-we-are-sec {
+    padding: 281px 0;
+    border-radius: 0 0 11.979vw 11.979vw;
+    background: url("../assets/who-we-are-bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--tertiary-color);
+    position: relative;
+}
+
+.who-we-are-wrapper {
+    max-width: 497px;
+}
+
+.who-we-are-wrapper::after {
+    content: "";
+    width: 335px;
+    height: 335px;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    bottom: -80px;
+    transform: translate(-50%);
+    background: var(--primary-color);
+    filter: blur(250px);
+    z-index: -1;
+}
+
+.who-we-are-sec .title-2 {
+    max-width: 404px;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: calc(60/60);
+    margin: 15px 0 31px;
+}
+
+.who-we-are-sec p {
+    max-width: 496px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(24/16);
+}
+
+.who-we-are-wrapper .primary-btn {
+    border: 1px solid var(--tertiary-color);
+    color: var(--tertiary-color);
+    margin-top: 33px;
+}
+
+
+
+
 
 
 
@@ -488,6 +546,11 @@ Media Queries
         margin-bottom: 60px;
     }
 
+
+    /* who We Are Section */
+    .who-we-are-sec {
+        padding: 120px 0;
+    }
 }
 
 
@@ -573,6 +636,14 @@ Media Queries
         padding: 18px 10px;
         font-size: 12px;
     }
+
+    /* who We Are Section */
+    .who-we-are-wrapper::after {
+        content: "";
+        width: 300px;
+        height: 300px;
+    }
+
 
 }
 
