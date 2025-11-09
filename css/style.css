@@ -752,6 +752,14 @@ Media Queries
         font-size: 50px;
     }
 
+    .secondary-btn {
+        letter-spacing: 1px;
+    }
+
+    .primary-btn {
+        letter-spacing: 1px;
+    }
+
 
     /* Support Section */
     .support-sec {
@@ -825,13 +833,13 @@ Media Queries
 
     .banner-btn .secondary-btn {
         padding: 18px 22px;
-        font-size: 10px;
+        font-size: 13px;
         letter-spacing: 0;
     }
 
     .banner-btn .primary-btn {
         padding: 18px 22px;
-        font-size: 10px;
+        font-size: 13px;
         letter-spacing: 0;
     }
 
