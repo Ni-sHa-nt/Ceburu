@@ -46,6 +46,12 @@ a {
     padding: 0 15px;
 }
 
+.col-5 {
+    width: 50%;
+    padding: 0 15px;
+}
+
+
 
 .title-2 {
     font-size: 60px;
@@ -61,6 +67,8 @@ a {
     border-radius: 50px;
     position: relative;
     overflow: hidden;
+    text-transform: capitalize;
+    letter-spacing: 3px;
 }
 
 .secondary-btn {
@@ -447,12 +455,76 @@ Future Section
 
 
 
+/* 
+######################################################
+Features Section
+######################################################
+ */
+.features-sec {
+    padding: 120px 0;
+}
+
+/* .features-img {
+    max-width: 745px;
+} */
+
+.features-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.features-row {
+    align-items: center;
+}
+
+.features-content ul li {
+    display: flex;
+    align-items: center;
+}
 
 
+.tick-icon {
+    width: 22px;
+    display: flex;
+    align-items: center;
+    margin-right: 11px;
+}
+
+.tick-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tick-item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(24/16);
+}
+
+.features-content {
+    max-width: 508px;
+}
 
 
+.features-content p {
+    max-width: 496px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(24/16);
+    margin-bottom: 28px;
+}
+
+.bottom-space {
+    margin-bottom: 17px;
+}
 
 
+.features-content .primary-btn {
+    margin-top: 28px;
+}
 
 
 
@@ -576,6 +648,16 @@ Media Queries
         font-size: 48px;
     }
 
+
+    /* Features Section */
+    .features-content .title-2 {
+        font-size: 45px;
+    }
+
+    .features-img {
+        margin-bottom: 50px;
+    }
+
 }
 
 
@@ -603,6 +685,16 @@ Media Queries
     .who-we-are-sec {
         padding: 120px 0;
     }
+
+    /* Features Section */
+    .features-content {
+        max-width: 100%;
+    }
+
+    .features-content p {
+        max-width: 100%;
+    }
+
 }
 
 
@@ -621,6 +713,17 @@ Media Queries
 
     .sm-navbar-btn {
         margin-right: 16px;
+    }
+
+
+    /* Future Section  */
+    .future-sec {
+        padding: 60px 0;
+    }
+
+    /* Features Section */
+    .features-sec {
+        padding: 60px 0;
     }
 
 
@@ -681,6 +784,16 @@ Media Queries
         max-width: 92px;
     }
 
+
+    /* Features Section */
+    .tick-icon {
+        width: 15px;
+    }
+
+    .tick-item {
+        font-size: 12px;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
@@ -698,7 +811,6 @@ Media Queries
     .nav-logo a {
         width: 135px;
     }
-
 
     .sm-navbar-btn {
         margin-right: 8px;
@@ -755,5 +867,22 @@ Media Queries
     /* Future Section  */
     .future-wrapper .title-2 {
         font-size: 32px;
+    }
+
+    /* Features Section */
+    .features-content .title-2 {
+        font-size: 32px;
+    }
+
+    .tick-icon {
+        width: 12px;
+    }
+
+    .tick-item {
+        font-size: 10px;
+    }
+
+    .features-content .primary-btn {
+        letter-spacing: 0;
     }
 }
