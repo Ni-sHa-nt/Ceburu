@@ -51,6 +51,11 @@ a {
     padding: 0 15px;
 }
 
+.col-6 {
+    width: 16.66%;
+    padding: 0 15px;
+}
+
 
 
 .title-2 {
@@ -530,6 +535,40 @@ Features Section
 
 
 
+/* 
+######################################################
+ Our Clients 
+######################################################
+ */
+.client-sec {
+    padding: 60px 0;
+}
+
+.client-head .sub-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.col-6 img {
+    width: 100%;
+    height: 86px;
+    object-fit: contain;
+}
+
+.client-row {
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*
 ######################################################
 Media Queries 
@@ -693,6 +732,14 @@ Media Queries
 
     .features-content p {
         max-width: 100%;
+    }
+
+
+
+    /* Our Clients */
+    .col-6 {
+        width: 30%;
+        margin-bottom: 25px;
     }
 
 }
@@ -892,5 +939,26 @@ Media Queries
 
     .features-content .primary-btn {
         letter-spacing: 0;
+    }
+
+
+
+    /* Our Clients */
+    .client-sec {
+        padding: 30px 0;
+    }
+
+    .col-6 {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .col-6 img {
+        width: 75%;
+    }
+
+    .client-head .sub-title {
+        margin-bottom: 25px;
     }
 }
