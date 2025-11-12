@@ -438,18 +438,64 @@ Future Section
 }
 
 
-.play-btn {
-    max-width: 152.73px;
+.play-wrapper {
+    width: 152.73px;
+    height: 152.73px;
     position: absolute;
     top: 50%;
     left: 50%;
+    background: rgba(255, 255, 225, 24%);
+    border-radius: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.play-btn img {
+
+.stroke {
+    width: 108.03px;
+    height: 108.03px;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+}
+
+.stroke img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+
+.circle-bg {
+    width: 93.89px;
+    height: 93.89px;
+    background: var(--primary-color);
+    border-radius: 50%;
+
+}
+
+
+.play-btn-icon {
+    position: absolute;
+    width: 28.14px;
+    height: 30.87px;
+}
+
+.play-btn-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .future-img img {
@@ -1040,9 +1086,7 @@ Media Queries
         font-size: 48px;
     }
 
-    .play-btn {
-        max-width: 92px;
-    }
+
 
 
     /* Features Section */
