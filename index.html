@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ceburu</title>
-
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- Fancy Box CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <!-- Swiper Js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -98,11 +100,111 @@
             </div>
         </section>
 
+        <!-- Ceburu Overview Section -->
+        <section class="ceburu-overview-sec">
+            <div class="container">
+                <div class="ceburu-overview-head">
+                    <div class="subtitle">
+                        Lorem Ipsum
+                    </div>
+                    <h2 class="title-2">Ceburu Overview</h2>
+                    <p>A comprehensive all-in-one IT management platform designed to streamline and optimize your IT
+                        operations. With powerful
+                        features and advanced capabilities, Ceburu empowers businesses to efficiently manage their IT
+                        infrastructure, enhance
+                        performance, and ensure the security of their systems. Explore our main categories below to
+                        discover
+                        how Ceburu can
+                        revolutionize your IT management.</p>
+                </div>
+            </div>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="overview-card">
+                            <img src="./assets/overview-card-img-01.png" alt="">
+                            <div class="overview-card-overlay">
+                                <h3>Performance Monitoring</h3>
+                                <p>Optimize the performance of your IT infrastructure with Ceburu's comprehensive
+                                    performance monitoring capabilities.
+                                    Monitor network performance, database performance, and system metrics in real-time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="overview-card">
+                            <img src="./assets/overview-card-img-02.png" alt="">
+                            <div class="overview-card-overlay">
+                                <h3>AI Monitoring</h3>
+                                <p>Optimize the performance of your IT infrastructure with Ceburu's comprehensive
+                                    performance monitoring capabilities.
+                                    Monitor network performance, database performance, and system metrics in real-time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="overview-card">
+                            <img src="./assets/overview-card-img-03.png" alt="">
+                            <div class="overview-card-overlay">
+                                <h3>Remote Connect</h3>
+                                <p>Optimize the performance of your IT infrastructure with Ceburu's comprehensive
+                                    performance monitoring capabilities.
+                                    Monitor network performance, database performance, and system metrics in real-time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="overview-card">
+                            <img src="./assets/overview-card-img-01.png" alt="">
+                            <div class="overview-card-overlay">
+                                <h3>Performance Monitoring</h3>
+                                <p>Optimize the performance of your IT infrastructure with Ceburu's comprehensive
+                                    performance monitoring capabilities.
+                                    Monitor network performance, database performance, and system metrics in real-time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="overview-card">
+                            <img src="./assets/overview-card-img-02.png" alt="">
+                            <div class="overview-card-overlay">
+                                <h3>AI Monitoring</h3>
+                                <p>Optimize the performance of your IT infrastructure with Ceburu's comprehensive
+                                    performance monitoring capabilities.
+                                    Monitor network performance, database performance, and system metrics in real-time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="overview-card">
+                            <img src="./assets/overview-card-img-03.png" alt="">
+                            <div class="overview-card-overlay">
+                                <h3>Remote Connect</h3>
+                                <p>Optimize the performance of your IT infrastructure with Ceburu's comprehensive
+                                    performance monitoring capabilities.
+                                    Monitor network performance, database performance, and system metrics in real-time.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
         <!-- Support Section -->
         <section class="support-sec">
             <div class="container">
                 <div class="row support-row">
-                    <div class="col-50">
+                    <div class="col-50 support-col">
                         <div class="support-img">
                             <img src="./assets/support-img.png" alt="">
                         </div>
@@ -165,20 +267,122 @@
                             <img src="./assets/play-stroke.png" alt="">
                         </div>
                         <div class="circle-bg"></div>
-                        <div class="play-btn-icon">
-                            <img src="./assets/play-btn-icon.png" alt="">
-                        </div>
+                        <a class="fancy-box" data-fancybox href="https://youtu.be/6hK5LFMNl00?si=Helifv7JAq-4cG5w">>
+                            <div class="play-btn-icon">
+                                <img src="./assets/play-btn-icon.png" alt="">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Testimonials Section -->
+        <section class="testimonials-sec">
+            <div class="container">
+                <div class="testimonial-head">
+                    <div class="testimonial-title">
+                        Testimonials
+                    </div>
+                    <h2 class="title-2">Real Experiences with Ceburu's Powerful Solutions</h2>
+                    <p>Join the thousands of other people just like you who started using Ceburu and took back control
+                        of their day.</p>
+                </div>
+                <div class="testimonialSwiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="user-wrapper">
+                                    <div class="user-img">
+                                        <img src="./assets/user-img-01.png" alt="">
+                                    </div>
+                                    <h4>Acordis</h4>
+                                </div>
+                                <p>"Ceburu has truly transformed the way we manage our IT infrastructure. The AI-driven
+                                    capabilities have allowed us to
+                                    proactively monitor and address issues, saving us valuable time and resources. It's
+                                    a
+                                    game-changer in the industry, and
+                                    we couldn't be happier with the results."</p>
+                                <div class="quote-icon">
+                                    <img src="./assets/quote-icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="user-wrapper">
+                                    <div class="user-img">
+                                        <img src="./assets/user-img-02.png" alt="">
+                                    </div>
+                                    <h4>Nicklaus Children Hospital</h4>
+                                </div>
+                                <p>"Our experience with Ceburu has been exceptional. The AI-powered monitoring and
+                                    management platform has provided us with
+                                    valuable insights into our IT infrastructure, enabling us to enhance network
+                                    performance
+                                    and streamline operations. It's
+                                    an essential tool for any organization looking to leverage AI for efficient and
+                                    proactive IT management."</p>
+                                <div class="quote-icon">
+                                    <img src="./assets/quote-icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="user-wrapper">
+                                    <div class="user-img">
+                                        <img src="./assets/user-img-03.png" alt="">
+                                    </div>
+                                    <h4>Big Brothers Big Sisters</h4>
+                                </div>
+                                <p>"Ceburu has simplified our backup management processes and provided an extra layer of
+                                    security for our critical data.
+                                    The ease of use and automated features have made a significant difference in our
+                                    day-to-day operations. We highly
+                                    recommend Ceburu to any organization looking for a comprehensive RMM solution."</p>
+                                <div class="quote-icon">
+                                    <img src="./assets/quote-icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="user-wrapper">
+                                    <div class="user-img">
+                                        <img src="./assets/user-img-01.png" alt="">
+                                    </div>
+                                    <h4>Acordis</h4>
+                                </div>
+                                <p>"Ceburu has truly transformed the way we manage our IT infrastructure. The AI-driven
+                                    capabilities have allowed us to
+                                    proactively monitor and address issues, saving us valuable time and resources. It's
+                                    a
+                                    game-changer in the industry, and
+                                    we couldn't be happier with the results."</p>
+                                <div class="quote-icon">
+                                    <img src="./assets/quote-icon.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation buttons -->
+                    <!-- <div class="swiper-button-prev">
+                        <img src="./assets/arrow-icon-right.png" alt="">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="./assets/arrow-icon-right.png" alt="">
+                    </div> -->
+                </div>
+            </div>
+        </section>
 
         <!-- Features Section -->
         <section class="features-sec">
             <div class="container">
                 <div class="row features-row">
-                    <div class="col-50">
+                    <div class="col-50 features-col">
                         <div class="features-img">
                             <img src="./assets/features-img.png" alt="">
                         </div>
@@ -322,24 +526,32 @@
                         our CLIENTS
                     </div>
                 </div>
-                <div class="row client-row">
-                    <div class="col-6">
-                        <img src="./assets/acordis-logo.png" alt="">
-                    </div>
-                    <div class="col-6">
-                        <img src="./assets/palm-logo.png" alt="">
-                    </div>
-                    <div class="col-6">
-                        <img src="./assets/oyc-logo.png" alt="">
-                    </div>
-                    <div class="col-6">
-                        <img src="./assets/arnet-logo.png" alt="">
-                    </div>
-                    <div class="col-6">
-                        <img src="./assets/nicklaus.png" alt="">
-                    </div>
-                    <div class="col-6">
-                        <img src="./assets/big-brother-logo.png" alt="">
+                <div class="clientSwiper swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <img src="./assets/acordis-logo.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/palm-logo.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/oyc-logo.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/arnet-logo.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/nicklaus.png" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./assets/big-brother-logo.png" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -437,6 +649,16 @@
             </div>
         </section>
     </footer>
+
+
+    <!-- Fancy Box Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

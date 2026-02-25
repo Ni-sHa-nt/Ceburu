@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,12 @@
     --tertiary-color: #FFFFFF;
 }
 
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -21,7 +29,6 @@ body {
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
-    /* border: 2px solid red; */
 }
 
 ul {
@@ -55,6 +62,8 @@ a {
     width: 16.66%;
     padding: 0 15px;
 }
+
+
 
 
 
@@ -128,7 +137,6 @@ a {
 Header Section 
 ######################################################
 */
-
 .header-sec {
     padding: 15px 0;
     position: sticky;
@@ -226,6 +234,7 @@ Banner Section
     background-blend-mode: darken;
 }
 
+
 .title-1 {
     color: var(--tertiary-color);
     font-size: 72px;
@@ -268,6 +277,126 @@ Banner Section
 }
 
 
+/* 
+######################################################
+Ceburu Overview Section
+######################################################
+ */
+.ceburu-overview-sec {
+    padding-top: 120px;
+    padding-bottom: 20px;
+}
+
+.ceburu-overview-head {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.ceburu-overview-head .subtitle {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: var(--secondary-color);
+    line-height: calc(30/16);
+    letter-spacing: 6.4px;
+}
+
+.ceburu-overview-head p {
+    max-width: 893px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-color);
+    line-height: calc(24/16);
+    margin: 0 auto;
+}
+
+.ceburu-overview-sec .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.ceburu-overview-sec .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overview-card {
+    position: relative;
+    overflow: hidden;
+    height: 640px;
+}
+
+.overview-card::before {
+    content: "";
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.overview-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    transition: 0.35s;
+    z-index: 3;
+    transform: translateY(78%);
+    transition: 0.45s ease;
+}
+
+.overview-card:hover .overview-card-overlay {
+    transform: translateY(0);
+}
+
+.overview-card-overlay h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--tertiary-color);
+    line-height: calc(34/30);
+    margin-bottom: 12px;
+}
+
+.overview-card-overlay p {
+    /* max-width: 513.43px; */
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--tertiary-color);
+    line-height: calc(25/16);
+    margin-bottom: 40px;
+}
+
+.ceburu-overview-sec .swiper-button-next {
+    border-radius: 50px 0 0 50px;
+    right: 0;
+}
+
+.ceburu-overview-sec .swiper-button-prev {
+    border-radius: 0px 50px 50px 0px;
+    left: 0;
+}
+
+.ceburu-overview-sec .swiper-button-next,
+.ceburu-overview-sec .swiper-button-prev {
+    color: #fff;
+    width: 80px;
+    height: 55px;
+    background: var(--primary-color);
+}
+
+.ceburu-overview-sec .swiper-button-next::after,
+.ceburu-overview-sec .swiper-button-prev::after {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 
 /* 
@@ -475,6 +604,13 @@ Future Section
 
 }
 
+.fancy-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
 
 .play-btn-icon {
     position: absolute;
@@ -505,6 +641,163 @@ Future Section
 }
 
 
+/* 
+######################################################
+Testimonials Section
+######################################################
+*/
+.testimonials-sec {
+    padding: 132px 0;
+    background: url("../assets/testimonials-bg.png");
+    background-color: rgba(217, 217, 217, 100%);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 11.979vw 11.979vw;
+    position: relative;
+}
+
+.testimonials-sec::after {
+    content: "";
+    width: 335px;
+    height: 335px;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    bottom: -80px;
+    transform: translate(-50%);
+    background: var(--primary-color);
+    filter: blur(250px);
+    z-index: -1;
+}
+
+.testimonial-head {
+    text-align: center;
+    margin-bottom: 53px;
+}
+
+.testimonial-head .testimonial-title {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--tertiary-color);
+    line-height: calc(30/16);
+    letter-spacing: 6.4px;
+}
+
+.testimonial-head .title-2 {
+    max-width: 893px;
+    color: var(--tertiary-color);
+    margin: 17px auto 25px;
+    line-height: calc(65/60);
+}
+
+.testimonial-head p {
+    max-width: 743px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--tertiary-color);
+    line-height: calc(24/16);
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    padding: 35px 53px 70px 26px;
+    border: 1px solid rgba(255, 255, 255, 10%);
+    background-color: rgba(255, 255, 255, 5%);
+    border-radius: 43px;
+    /* box-shadow: 19px 12px 319px 0px rgba(0, 0, 0, 26%); */
+    backdrop-filter: blur(31px);
+    position: relative;
+    height: 100%;
+}
+
+.testimonial-card .user-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+
+.testimonial-card .user-img img {
+    width: 62.54px;
+    height: 62.54px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.testimonial-card .user-wrapper h4 {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--tertiary-color);
+    margin-left: 19px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+.testimonial-card p {
+    max-width: 382px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(25/16);
+    color: var(--tertiary-color);
+}
+
+.quote-icon {
+    width: 77px;
+    height: 77px;
+    background: rgba(217, 217, 217, 5%);
+    border: 1px solid rgba(255, 255, 255, 10%);
+    backdrop-filter: blur(31px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -40px;
+    right: 48px;
+}
+
+.quote-icon img {
+    width: 42px;
+    height: 35px;
+    object-fit: cover;
+}
+
+.testimonialSwiper {
+    padding: 50px 0;
+    position: relative;
+}
+
+
+.testimonialSwiper .swiper-slide {
+    height: auto;
+    display: flex;
+}
+
+
+
+.testimonialSwiper .swiper-button-prev,
+.testimonialSwiper .swiper-button-next {
+    width: 60px;
+    height: 60px;
+    border: 2px solid var(--tertiary-color);
+    border-radius: 50%;
+    color: #fff;
+}
+
+
+.testimonialSwiper .swiper-button-prev img {
+    transform: rotate(180deg);
+}
+
+.testimonialSwiper .swiper-button-prev::after,
+.testimonialSwiper .swiper-button-next::after {
+    display: none;
+}
+
+
 
 /* 
 ######################################################
@@ -532,7 +825,7 @@ Features Section
 
 .features-content ul li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 
@@ -541,6 +834,7 @@ Features Section
     display: flex;
     align-items: center;
     margin-right: 11px;
+    flex-shrink: 0;
 }
 
 .tick-icon img {
@@ -553,10 +847,6 @@ Features Section
     font-size: 16px;
     font-weight: 400;
     line-height: calc(24/16);
-}
-
-.features-content {
-    max-width: 508px;
 }
 
 
@@ -587,7 +877,8 @@ Features Section
 ######################################################
  */
 .client-sec {
-    padding: 60px 0;
+    /* padding: 60px 0; */
+    padding-bottom: 60px;
 }
 
 .client-head .sub-title {
@@ -595,14 +886,26 @@ Features Section
     margin-bottom: 55px;
 }
 
-.col-6 img {
-    width: 100%;
-    height: 86px;
-    object-fit: contain;
+.clientSwiper {
+    padding: 40px 0;
 }
 
-.client-row {
+.clientSwiper .swiper-slide {
+    display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.clientSwiper img {
+    max-width: 150px;
+    width: 100%;
+    transition: 0.3s;
+    height: 68px;
+}
+
+
+.clientSwiper .swiper-wrapper {
+    transition-timing-function: linear !important;
 }
 
 
@@ -796,6 +1099,18 @@ Media Queries
 ######################################################
 */
 
+@media screen and (max-width: 1300px) {
+
+    /* Ceburu Overview Section */
+    .overview-card-overlay h3 {
+        font-size: 24px;
+    }
+
+    .overview-card-overlay {
+        transform: translateY(85%);
+    }
+}
+
 @media screen and (max-width: 1200px) {
 
     /* Navbar Section*/
@@ -905,76 +1220,77 @@ Media Queries
 
     /* Support Section */
     .support-content .title-2 {
-        font-size: 48px;
+        font-size: 30px;
     }
 
+    /* who We Are Section */
+    .who-we-are-sec {
+        padding: 100px 0;
+    }
+
+    /* Testimonials Section */
+    .testimonial-card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .testimonial-card p {
+        max-width: 100%;
+    }
 
     /* Features Section */
     .features-content .title-2 {
         font-size: 45px;
     }
 
-    .features-img {
-        margin-bottom: 50px;
+    .features-row {
+        position: relative;
+        align-items: flex-start;
     }
 
+    .features-col {
+        position: sticky;
+        top: 120px;
+    }
 }
 
+@media screen and (max-width: 1024px) {
+
+    /* Ceburu Overview Section */
+    .overview-card-overlay {
+        transform: translateY(80%);
+    }
+}
 
 @media screen and (max-width: 992px) {
 
+    /* Ceburu Overview Section */
+    .overview-card-overlay {
+        transform: translateY(85%);
+    }
+
     /* Support Section */
-    .col-50 {
-        width: 100%;
+    .support-row {
+        position: relative;
+        align-items: flex-start;
     }
 
-    .support-content {
-        max-width: 100% !important;
-    }
-
-    .support-content .title-2 {
-        max-width: 100%;
-    }
-
-    .support-img {
-        margin-bottom: 60px;
-    }
-
-
-    /* who We Are Section */
-    .who-we-are-sec {
-        padding: 120px 0;
+    .support-col {
+        position: sticky;
+        top: 120px;
     }
 
     /* Features Section */
-    .features-content {
-        max-width: 100%;
+    .features-content .title-2 {
+        font-size: 40px;
     }
 
-    .features-content p {
-        max-width: 100%;
-    }
-
-
-
-    /* Our Clients */
-    .col-6 {
-        width: 30%;
-        margin-bottom: 25px;
-    }
 
     /* Footer Section  */
     .footer-head {
-        font-size: 45px;
+        font-size: 35px;
     }
-
-    .footer-btn {
-        display: block;
-        margin-top: 35px;
-    }
-
 }
-
 
 @media screen and (max-width: 768px) {
 
@@ -993,17 +1309,99 @@ Media Queries
         margin-right: 16px;
     }
 
+    /* Banner Section */
+    .banner-sec .title-1 {
+        color: var(--tertiary-color);
+        font-size: 50px;
+    }
+
+    /* Ceburu Overview Section */
+    .ceburu-overview-sec {
+        padding-top: 80px;
+    }
+
+    .ceburu-overview-head .title-2 {
+        font-size: 48px;
+    }
+
+    .overview-card-overlay h3 {
+        font-size: 18px;
+    }
+
+    .overview-card-overlay {
+        transform: translateY(90%);
+    }
+
+    /* Support Section */
+    .support-sec .col-50 {
+        width: 100%;
+    }
+
+    .support-col {
+        position: relative;
+        top: 0;
+        margin-bottom: 30px;
+    }
+
+    .support-img {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .support-content {
+        max-width: 100%;
+    }
+
+    .support-content .title-2 {
+        max-width: 100%;
+    }
+
+    /* who We Are Section */
+    .support-sec {
+        padding: 80px 0;
+    }
+
+    .who-we-are-sec .title-2 {
+        font-size: 40px;
+    }
 
     /* Future Section  */
     .future-sec {
-        padding: 60px 0;
+        padding: 80px 0;
+    }
+
+    .future-sec .title-2 {
+        font-size: 45px;
+    }
+
+    /* Testimonials Section */
+    .testimonial-head .title-2 {
+        font-size: 48px;
+    }
+
+    .testimonial-card {
+        padding: 35px;
     }
 
     /* Features Section */
     .features-sec {
-        padding: 60px 0;
+        padding: 80px 0;
     }
 
+    .features-sec .col-50 {
+        width: 100%;
+    }
+
+    .features-col {
+        position: relative;
+        top: 0px;
+        margin-bottom: 50px;
+    }
+
+    .features-sec .features-img {
+        max-width: 450px;
+        margin: 0 auto;
+    }
 
 
     /* Footer Section */
@@ -1043,11 +1441,13 @@ Media Queries
         display: none;
     }
 
-
-
     /* Banner Section */
-    .title-1 {
-        font-size: 50px;
+    .banner-sec {
+        min-height: 80vh;
+    }
+
+    .banner-sec .title-1 {
+        font-size: 40px;
     }
 
     .secondary-btn {
@@ -1058,6 +1458,35 @@ Media Queries
         letter-spacing: 1px;
     }
 
+    /* Ceburu Overview Section */
+    .ceburu-overview-head .title-2 {
+        font-size: 38px;
+    }
+
+    .ceburu-overview-head p {
+        font-size: 14px;
+    }
+
+    .overview-card-overlay {
+        transform: translateY(86%);
+    }
+
+    .overview-card {
+        position: relative;
+        overflow: hidden;
+        height: 580px;
+    }
+
+    .ceburu-overview-sec .swiper-button-next,
+    .ceburu-overview-sec .swiper-button-prev {
+        width: 55px;
+        height: 40px;
+    }
+
+    .ceburu-overview-sec .swiper-button-next::after,
+    .ceburu-overview-sec .swiper-button-prev::after {
+        font-size: 12px;
+    }
 
     /* Support Section */
     .support-sec {
@@ -1065,7 +1494,7 @@ Media Queries
     }
 
     .support-content .title-2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
 
@@ -1077,17 +1506,55 @@ Media Queries
     }
 
     .who-we-are-sec .title-2 {
-        font-size: 47px;
+        font-size: 35px;
     }
 
 
     /* Future Section  */
     .future-wrapper .title-2 {
-        font-size: 48px;
+        font-size: 35px;
     }
 
+    .play-wrapper {
+        width: 100.73px;
+        height: 100.73px;
+    }
 
+    .stroke {
+        width: 85.03px;
+        height: 85.03px;
+    }
 
+    .circle-bg {
+        width: 70.89px;
+        height: 70.89px;
+    }
+
+    .play-btn-icon {
+        width: 22.14px;
+        height: 23.87px;
+    }
+
+    /* Testimonials Section */
+    .testimonials-sec {
+        padding: 60px 0;
+    }
+
+    .testimonial-head .title-2 {
+        font-size: 35px;
+    }
+
+    .testimonial-head p {
+        font-size: 14px;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .testimonial-card p {
+        font-size: 14px;
+    }
 
     /* Features Section */
     .tick-icon {
@@ -1103,8 +1570,13 @@ Media Queries
         width: 170px;
     }
 
-    .footer-logo a {
-        width: 170px;
+    .footer-sec .col-50 {
+        width: 100%;
+    }
+
+    .footer-btn .primary-btn {
+        margin: 0;
+        margin-top: 30px;
     }
 
 }
@@ -1129,25 +1601,41 @@ Media Queries
         margin-right: 8px;
     }
 
-
-
     /* Banner Section */
-    .title-1 {
-        font-size: 35px;
+    .banner-sec .title-1 {
+        font-size: 30px;
+    }
+
+    .banner-wrapper p {
+        font-size: 14px;
     }
 
     .banner-btn .secondary-btn {
         padding: 18px 22px;
-        font-size: 10px;
+        font-size: 12px;
         letter-spacing: 0;
     }
 
     .banner-btn .primary-btn {
         padding: 18px 22px;
-        font-size: 10px;
+        font-size: 12px;
         letter-spacing: 0;
     }
 
+
+    /* Ceburu Overview Section */
+    .ceburu-overview-head .subtitle {
+        font-size: 12px;
+    }
+
+    .ceburu-overview-head .title-2 {
+        font-size: 28px;
+        margin: 15px 0 20px;
+    }
+
+    .ceburu-overview-head p {
+        font-size: 12px;
+    }
 
 
     /* Support Section */
@@ -1158,33 +1646,77 @@ Media Queries
     }
 
     .support-content .sub-title {
-        font-size: 12px;
+        font-size: 14px;
+        letter-spacing: 3.4px;
     }
 
     .support-content .title-2 {
         font-size: 22px;
     }
 
+    .support-content p {
+        font-size: 14px;
+    }
+
     .support-content .secondary-btn {
-        padding: 20px 24px;
+        padding: 15px 24px;
         font-size: 12px;
         letter-spacing: 1.2px;
     }
 
 
     /* who-we-are-sec */
+    .who-we-are-sec {
+        padding: 80px 0;
+    }
+
+    .who-we-are-sec .sub-title {
+        font-size: 14px;
+        letter-spacing: 3.4px;
+    }
+
     .who-we-are-sec .title-2 {
-        font-size: 30px;
+        font-size: 25px;
+    }
+
+    .who-we-are-sec p {
+        font-size: 14px;
     }
 
     /* Future Section  */
     .future-wrapper .title-2 {
-        font-size: 32px;
+        font-size: 25px;
+    }
+
+    .future-wrapper p {
+        font-size: 12px;
+    }
+
+    /* Testimonials Section */
+    .testimonial-head .testimonial-title {
+        font-size: 14px;
+    }
+
+    .testimonial-head .title-2 {
+        font-size: 25px;
     }
 
     /* Features Section */
+    .features-sec {
+        padding-bottom: 40px;
+    }
+
     .features-content .title-2 {
-        font-size: 32px;
+        font-size: 28px;
+        margin: 8px 0 20px;
+    }
+
+    .features-content p {
+        font-size: 12px;
+    }
+
+    .features-col {
+        margin-bottom: 30px;
     }
 
     .tick-icon {
@@ -1200,20 +1732,9 @@ Media Queries
     }
 
 
-
     /* Our Clients */
     .client-sec {
         padding: 30px 0;
-    }
-
-    .col-6 {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .col-6 img {
-        width: 75%;
     }
 
     .client-head .sub-title {
@@ -1222,12 +1743,16 @@ Media Queries
 
 
     /* Footer Section */
-    .footer-link {
-        font-size: 12px;
+    .footer-head {
+        font-size: 28px;
     }
 
-    .footer-head {
-        font-size: 32px;
+    .footer-sec .left-para {
+        font-size: 14px;
+    }
+
+    .footer-link {
+        font-size: 12px;
     }
 
     .copy-rights-left {
