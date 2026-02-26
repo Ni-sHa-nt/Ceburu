@@ -1,0 +1,429 @@
+/* 
+######################################################
+About Us Hero Section
+######################################################
+*/
+.about-us-hero-sec {
+    padding: 155px 0 136px;
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 70%), rgba(0, 0, 0, 0)),
+        url("../assets/about-us-hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.about-us-hero-sec p {
+    font-size: 18px;
+    font-style: italic;
+    color: var(--tertiary-color);
+    margin: 18px 0 31px;
+    line-height: calc(26/18);
+}
+
+.about-us-hero-sec .primary-btn {
+    border: 1px solid var(--tertiary-color);
+    color: var(--tertiary-color);
+}
+
+
+/* 
+######################################################
+Solutions Section
+######################################################
+*/
+.solution-sec {
+    padding: 120px 0;
+}
+
+.solution-sec .left-cntnt,
+.solution-sec .right-cntnt {
+    max-width: 772.2px;
+    /* height: 468px; */
+}
+
+.solution-sec .left-cntnt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 17px;
+}
+
+.solution-sec .right-cntnt p {
+    line-height: calc(24/16);
+    max-width: 643px;
+}
+
+.solution-sec .bottom-row {
+    flex-direction: row-reverse;
+    margin-top: 120px;
+}
+
+
+
+/* 
+######################################################
+Asset Monitoring Section
+######################################################
+*/
+.asset-monitoring-sec {
+    padding: 110px 0 129px;
+    background: url(../assets/asset-monitoring-sec-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 11.979vw 11.979vw;
+    position: relative;
+}
+
+.asset-monitoring-sec::after {
+    content: "";
+    max-width: 80%;
+    width: 335px;
+    height: 335px;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    bottom: -80px;
+    transform: translate(-50%);
+    background: var(--primary-color);
+    filter: blur(250px);
+    z-index: -1;
+}
+
+.asset-monitoring-sec .left-cntnt {
+    max-width: 745px;
+}
+
+.asset-monitoring-sec .left-cntnt img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.asset-monitoring-sec .right-cntnt {
+    color: var(--tertiary-color);
+}
+
+.asset-monitoring-sec .title-2 {
+    margin: 20px 0 22px;
+    /* max-width: 643px; */
+    line-height: calc(75/60);
+}
+
+.asset-monitoring-sec p {
+    max-width: 643px;
+}
+
+.asset-monitoring-row {
+    align-items: center;
+}
+
+
+/*
+######################################################
+Asset Status Section
+######################################################
+*/
+
+.asset-status-sec {
+    padding: 120px 0;
+}
+
+.asset-status-right {
+    max-width: 745px;
+}
+
+.asset-status-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/*
+######################################################
+Media Queries 
+######################################################
+*/
+@media screen and (max-width: 1500px) {
+
+    /* Solutions Section */
+    .top-row,
+    .bottom-row {
+        position: relative;
+        align-items: flex-start;
+    }
+
+    .solution-col {
+        position: sticky;
+        top: 120px;
+    }
+
+    /* Asset Status Section */
+    .asset-status-row {
+        position: relative;
+        align-items: flex-start;
+    }
+
+    .asset-status-col {
+        position: sticky;
+        top: 120px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* Asset Monitoring Section */
+    .asset-monitoring-sec .col-50 {
+        width: 100%;
+    }
+
+    .asset-monitoring-sec .left-cntnt {
+        max-width: 540px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .asset-monitoring-sec .right-cntnt {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .asset-monitoring-sec .title-2 {
+        margin: 20px 0 22px;
+        max-width: 100%;
+    }
+
+    .asset-monitoring-sec p {
+        max-width: 100%;
+    }
+
+    /* Asset Status Section */
+    .asset-status-left .title-2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    /* About Us Hero Section */
+    .about-us-hero-sec {
+        padding: 100px 0;
+    }
+
+    .about-us-hero-sec .title-1 {
+        font-size: 50px;
+    }
+
+    /* Solutions Section */
+    .solution-sec .title-2 {
+        font-size: 40px;
+    }
+
+    /* Asset Monitoring Section */
+    .asset-monitoring-sec .title-2 {
+        font-size: 50px;
+    }
+
+    /* Asset Status Section */
+    .asset-status-left .title-2 {
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /* About Us Hero Section */
+    .about-us-hero-sec {
+        padding: 80px 0;
+    }
+
+    .about-us-hero-sec .title-1 {
+        font-size: 40px;
+    }
+
+    .about-us-hero-sec p {
+        font-size: 16px;
+    }
+
+    .about-us-hero-sec .primary-btn {
+        padding: 18px 20px;
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+
+
+    /* Solutions Section */
+    .solution-col {
+        position: relative;
+        top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .solution-sec .col-50 {
+        width: 100%;
+    }
+
+    .solution-sec .title-2 {
+        font-size: 35px;
+    }
+
+    /* Asset Monitoring Section */
+    .asset-monitoring-sec .title-2 {
+        font-size: 38px;
+    }
+
+    /* Asset Status Section */
+    .asset-status-col {
+        position: relative;
+        top: 0px;
+        margin-bottom: 30px;
+    }
+
+
+    .asset-status-sec .col-50 {
+        width: 100%;
+    }
+
+    .asset-status-row {
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    /* About Us Hero Section */
+    .about-us-hero-sec {
+        padding: 50px 0;
+    }
+
+    .about-us-hero-sec p {
+        font-size: 14px;
+    }
+
+    /* Solutions Section */
+    .solution-sec {
+        padding: 80px 0;
+    }
+
+    .solution-sec .title-2 {
+        font-size: 28px;
+    }
+
+    .solution-sec .right-cntnt p {
+        font-size: 14px;
+    }
+
+    .solution-sec .sub-title {
+        font-size: 14px;
+        letter-spacing: 3.4px;
+    }
+
+    .solution-sec .bottom-row {
+        margin-top: 80px;
+    }
+
+    /* Asset Monitoring Section */
+    .asset-monitoring-sec {
+        padding: 80px 0px;
+    }
+
+    .asset-monitoring-sec .title-2 {
+        font-size: 30px;
+    }
+
+    .asset-monitoring-sec p {
+        font-size: 14px;
+    }
+
+    /* Asset Status Section */
+    .asset-status-sec {
+        padding: 80px 0;
+    }
+
+    /* Security Logs Section */
+    .security-logs-sec {
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /* About Us Hero Section */
+    .about-us-hero-sec .title-1 {
+        font-size: 35px;
+    }
+
+    .about-us-hero-sec p {
+        font-size: 12px;
+    }
+
+    /* Solutions Section */
+    .solution-sec {
+        padding: 60px 0;
+    }
+
+    .solution-sec .right-cntnt p {
+        font-size: 12px;
+    }
+
+    /* Asset Monitoring Section */
+    .asset-monitoring-sec {
+        padding: 50px 0px;
+    }
+
+    .asset-monitoring-sec .right-cntnt {
+        padding: 10px;
+    }
+
+    .asset-monitoring-sec .title-2 {
+        font-size: 22px;
+    }
+
+    .asset-monitoring-sec p {
+        font-size: 12px;
+    }
+
+    .asset-monitoring-sec .sub-title {
+        font-size: 14px;
+        letter-spacing: 3.4px;
+    }
+
+    /* Asset Status Section */
+    .asset-status-left .sub-title {
+        letter-spacing: 3.4px;
+    }
+
+    .asset-status-left p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+
+    /* Solutions Section */
+    .solution-sec .title-2 {
+        font-size: 22px;
+    }
+
+    /* Asset Monitoring Section */
+    .asset-monitoring-sec .right-cntnt {
+        padding: 0px;
+    }
+
+    /* Asset Status Section */
+    .asset-status-left .title-2 {
+        font-size: 22px;
+    }
+
+    .asset-status-left p {
+        font-size: 12px;
+    }
+}

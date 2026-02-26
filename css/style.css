@@ -14,11 +14,6 @@
     --tertiary-color: #FFFFFF;
 }
 
-html,
-body {
-    overflow-x: hidden;
-    max-width: 100%;
-}
 
 body {
     font-family: "Poppins", sans-serif;
@@ -1550,6 +1545,11 @@ Media Queries
 
     .testimonial-card p {
         font-size: 14px;
+    }
+
+    .testimonials-sec::after {
+        width: 200px;
+        height: 200px;
     }
 
     /* Features Section */
