@@ -772,25 +772,33 @@ Testimonials Section
 }
 
 
-
-.testimonialSwiper .swiper-button-prev,
-.testimonialSwiper .swiper-button-next {
+.testimonials-sec .swiper-button-prev,
+.testimonials-sec .swiper-button-next {
     width: 60px;
     height: 60px;
     border: 2px solid var(--tertiary-color);
     border-radius: 50%;
     color: #fff;
+    position: relative;
 }
 
+.custom-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
 
-.testimonialSwiper .swiper-button-prev img {
+.testimonials-sec .swiper-button-prev img {
     transform: rotate(180deg);
 }
 
-.testimonialSwiper .swiper-button-prev::after,
-.testimonialSwiper .swiper-button-next::after {
+.testimonials-sec .swiper-button-prev::after,
+.testimonials-sec .swiper-button-next::after {
     display: none;
 }
+
+
 
 
 

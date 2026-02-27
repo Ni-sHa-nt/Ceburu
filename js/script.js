@@ -57,10 +57,10 @@ var testimonialSwiper = new Swiper(".testimonialSwiper", {
 
     speed: 1000,
 
-    // navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    // },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 
     breakpoints: {
         0: {
